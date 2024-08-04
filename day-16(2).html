@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+ 
+ 
+  <script>
+     function walktoschool(){
+           return new Promise((resolve, reject)=>{
+             setTimeout(()=>{
+               
+              const schoolw = true;
+ 
+              if(schoolw){
+                resolve("you attent trhe school")
+              }else{
+                reject("bunk")
+              }
+ 
+ 
+             }, 1500)
+           })
+   }
+ 
+  function walktoshop(){
+   return new Promise((resolve, reject)=>{
+ 
+    setTimeout(()=>{
+     
+      const shopwe = true;
+ 
+      if(shopwe){
+        resolve("purchased smtng...")
+      }else{
+        reject("nothing....")
+      }
+ 
+ 
+    }, 2000)
+   })
+  }
+ 
+  function walktoHome(){
+    return new Promise((resolve, reject)=>{
+ 
+setTimeout(()=>{
+ 
+  const HomeF = true;
+ 
+  if(HomeF){
+    resolve("Reached ....")
+  }else{
+    reject("not .....")
+  }
+ 
+ 
+},3000 )
+})
+  }
+ 
+ 
+  //calling functions
+ 
+  async function all(){
+    try{
+      const walksch = walktoschool();
+      console.log(walksch);
+ 
+      const walksh = walktoshop();
+      console.log(walksh);
+ 
+      const  walkHo = walktoHome();
+      console.log(walkHo)
+    }catch(error){
+       console.error(error)
+    }
+  }
+ 
+  all()
+ 
+ 
+  </script>
+ 
+</body>
+</html>

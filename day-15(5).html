@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        console.log("Description of your activities")
+        // call back hell
+        function walkedtoschool(callback){
+            setTimeout(()=>{
+                console.log("u walked out of home")
+                callback()
+            }, 1500)
+        }
+
+        function walktoshop(callback){
+            setTimeout(()=>{
+                console.log("u entered into pan shop")
+                callback()
+            }, 2000)
+        }
+
+        function walktohome(callback){
+            setTimeout(()=>{
+                console.log("u reached your home")
+                callback()
+            }, 2500)
+        }
+
+        walkedtoschool(()=>{
+            walktoshop(()=>{
+                walktohome(()=> alert("done....."))
+            })
+        })
+
+    </script>
+</body>
+</html>

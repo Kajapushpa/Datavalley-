@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        .bgimg {
+            background-image: url('https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW2vHT_kRiIFO3spVWZwdWkXcxqJNrqkwN9mRw8q-yiY0hi3ho64Ce5nh3QXG4F5oaEZUDNYCWK8y-aKlaUMEsTmOd3mOZwIfvEQ.jpg?r=0b1&quot;');
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .topright {
+            border-radius: 3px;
+            background-color: #DB202C;
+            color: white;
+            height: 42px;
+            border: none;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            margin: 20px 0;
+        }
+
+        .title {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .seasons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .s1 {
+            border-radius: 3px;
+            background-color: #DB202C;
+            color: white;
+            height: 42px;
+            width: 100px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .logo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                max-width: 200px;
+            }
+
+            .s1 {
+                width: 100px;
+                height: 36px;
+            }
+
+            .logo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons {
+                margin-top: 10px;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .topright {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimg">
+        <div class="logo">
+            <img src="https://fontmeme.com/permalink/221130/509abc6ce35d6779bb820f67cf7913d8.png" alt="Logo"/>
+            <div class="buttons">
+                <a href="#"><button class="topright">Join Now</button></a>
+                <a href="#"><button class="topright">Sign In</button></a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABRfTYzZTsa4RSML6kzMVS_3PXeeBOAvckBbjiTM16yXJ3Iw0RBgTuNNYNujQQ4Q1TdY81BApkAFd-_TF1UkSi8Uc_l-nBrNks7Bbtt2KhFWOJzKA4Uu1KQhCEyxlUsDEGCAxWDIlzlHFmEuEF3jIRT7UGs3SDvsW8tG4pSaNA8y1TgDuLwuDYw.png?r=368" class="title" alt="Squid Game"/>
+            <h2>Squid Game</h2>
+            <p>2021 | Maturity Rating: A | 1 Season | Thriller</p>
+            <p> Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.</p>
+        </div>
+        <div class="container seasons">
+            <a href="#"><button class="s1">Season 1</button></a>
+            <a href="#"><button class="s1">Season 2</button></a>
+            <a href="#"><button class="s1">Season 3</button></a>
+            <a href="#"><button class="s1">Season 4</button></a>
+            <a href="#"><button class="s1">Season 5</button></a>
+            <a href="#"><button class="s1">Season 6</button></a>
+        </div>
+    </div>
+</body>
+</html>
